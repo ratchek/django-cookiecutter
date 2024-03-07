@@ -2,8 +2,10 @@
 
 python3 -m venv --prompt {{ cookiecutter.env_prompt }} env
 source env/bin/activate
-pip install -r requirements.txt
+pip install -r requirements/local.txt
 git init
 git add .
 git commit -m "Initial commit"
-git remote add origin {{ cookiecutter.github_url }}
+if [ "{{ cookiecutter.github_repo}}" != "no_github_repo" ]; then
+  git remote add origin {{ cookiecutter.github_url }}
+fi
