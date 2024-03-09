@@ -1,7 +1,7 @@
 {
   "project_name": "My Django Project",
   "__project_slug": "{{ cookiecutter.project_name.lower()|replace(' ', '_')|replace('-', '_')|replace('.', '_')|trim() }}",
-  "env_prompt": "{{ cookiecutter.project_slug }}",
+  "env_prompt": "{{ cookiecutter.__project_slug }}",
   "app_name": "My Django App",
   "__app_slug": "{{ cookiecutter.app_name.lower()|replace(' ', '_')|replace('-', '_')|replace('.', '_')|trim() }}",
   "__app_class_name": "{{ cookiecutter.app_name.replace('_', ' ')|replace('-', ' ')|replace('.', ' ')|title()|replace(' ','')|trim() }}",
