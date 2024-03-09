@@ -7,7 +7,7 @@ git init
 git add .
 git commit -m "Initial commit"
 if [ "{{ cookiecutter.github_repo}}" != "no_github_repo" ]; then
-  git remote add origin {{ cookiecutter.github_url }}
+  git remote add origin {{ cookiecutter.github_repo }}
 fi
 
 if [ "{{ cookiecutter.__pre_commit }}" != "y" ]; then
