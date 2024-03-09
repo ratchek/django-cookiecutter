@@ -8,6 +8,8 @@
   "github_repo": "no_github_repo",
   "use_pre_commit": "y",
   "__pre_commit": "{{ cookiecutter.use_pre_commit[:1]|lower() }}",
+  "use_django_allauth": "y",
+  "__django_allauth": "{{ cookiecutter.use_django_allauth[:1]|lower() }}",
   "create_editorconfig": "y",
   "__editorconfig": "{{ cookiecutter.create_editorconfig[:1]|lower() }}",
   "__prompts__": {
