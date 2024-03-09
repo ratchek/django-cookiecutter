@@ -10,7 +10,7 @@ if [ "{{ cookiecutter.github_repo}}" != "no_github_repo" ]; then
   git remote add origin {{ cookiecutter.github_url }}
 fi
 
-if [ "{{ cookiecutter.__pre-commit }}" != "y" ]; then
+if [ "{{ cookiecutter.__pre_commit }}" != "y" ]; then
     rm .pre-commit-config.yaml
 fi
 

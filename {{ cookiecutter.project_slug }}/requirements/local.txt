@@ -1,5 +1,5 @@
 -r base.txt
 
-{%- if cookiecutter.__pre-commit == "y" %}
+{%- if cookiecutter.__pre_commit == "y" %}
 pre-commit==3.6.2
 {%- endif %}
