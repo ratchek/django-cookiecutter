@@ -47,6 +47,7 @@ INSTALLED_APPS = [
     'allauth',
     'allauth.account',
     {% endif %}
+    users,
     '{{ cookiecutter.__app_slug }}',
 ]
 
@@ -63,7 +64,7 @@ MIDDLEWARE = [
     {% endif %}
 ]
 
-AUTH_USER_MODEL = "{{ cookiecutter.__app_slug }}.CustomUser"
+AUTH_USER_MODEL = "users.User"
 
 ROOT_URLCONF = "{{ cookiecutter.__project_slug }}.urls"
 
