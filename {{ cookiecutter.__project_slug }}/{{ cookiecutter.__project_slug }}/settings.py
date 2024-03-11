@@ -47,7 +47,7 @@ INSTALLED_APPS = [
     'allauth',
     'allauth.account',
     {%- endif %}
-    users,
+    'users',
     '{{ cookiecutter.__app_slug }}',
 ]
 
