@@ -18,7 +18,7 @@ from django.contrib import admin
 from django.urls import include, path
 
 urlpatterns = [
-    path("admin/", admin.site.urls),
+    path("rt-admin/", admin.site.urls),
     {% if cookiecutter.__django_allauth == "y" %}
     path('accounts/', include('allauth.urls')),
     {% endif %}
