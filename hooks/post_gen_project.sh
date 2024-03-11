@@ -4,6 +4,7 @@ python3 -m venv --prompt {{ cookiecutter.env_prompt }} env
 source env/bin/activate
 pip install -r requirements/local.txt
 git init
+mv gitignore .gitignore
 git add .
 git commit -m "Initial commit"
 if [ "{{ cookiecutter.github_repo}}" != "no_github_repo" ]; then
