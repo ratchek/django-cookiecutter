@@ -1,0 +1,10 @@
+Setup nginx on local machine (modify settings.py and settings.ini to use nginx instead of sqlite)
+Separate setting files for dev, prod, and test?
+
+Add a new cookiecutter with django allauth 
+Make sure django allauth templates are already set up and look nice
+Check out if you can do cookiecutter ihheritance
+Check out how the og cookiecutter handles allauth templates
+
+Set up scss
+Set up file watcher for scss
